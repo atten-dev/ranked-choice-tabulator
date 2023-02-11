@@ -6,7 +6,7 @@ def test_load_voters():
     voters = tabulate.load_voters("RankedChoiceSample.xlsx")
     assert len(voters) == 3
     assert voters[0].remaining_votes == ['A', 'B', 'C', 'D']
-    assert voters[1].remaining_votes == ['D', 'C', 'B', 'A']
+    assert voters[1].remaining_votes == ['D', 'C', 'B']
     assert voters[2].remaining_votes == ['A', 'C', 'B', 'D']
 
 

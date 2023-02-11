@@ -124,6 +124,8 @@ def load_voters(path: pathlib.Path) -> list[Voter]:
     curr_voter = None
     dataframe.reset_index()
     for index, row in dataframe.iterrows():
+        if index == 0:
+            continue  # Skip first row which just has the question
         user = row['USER ID']
         if not pd.isna(user):
             if curr_voter:
