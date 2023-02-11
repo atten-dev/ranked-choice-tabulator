@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "ranked-choice"
+version = "0.1.0"
+description = ""
+authors = ["atten-dev <atten.dev@gmail.com>"]
+readme = "README.md"
+packages = [{include = "ranked_choice"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^1.5.3"
+openpyxl = "^3.1.0"
+pytest = "^7.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
